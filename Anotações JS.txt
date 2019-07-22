@@ -1,0 +1,88 @@
+typeof x
+    - Diz qual o tipo da variável
+
+
+5 === '5'
+    - Três sinais de igual são para comparar valor e tipo, se for ripo diferente fica false
+
+
+Operadores Relacionais
+    ! - Negação (not)
+    && - Conjunção (and)
+    || - disjunção (or)
+
+
+Operador ternário
+    - media >= 7 ? "Aprovado" : "Reprovado"
+    - operador_lógico ? se_verdadeiro : se_falso
+
+
+window.document.querySelector('p')
+    - Puxar uma tag
+
+
+EVENTOS DOM
+    - Podem ser configurados no HTML ou no SCRIPT
+
+    SE for HTML:
+        <div id="area" onclick="clicar()" onmouseover="entrou()" onmouseout="saiu()">
+            Interaja...
+        </div>
+    
+    SE for no SCRIPT:
+        Pegar o id e jogar addEventListener nele:
+            var a = window.document.getElementById('area')
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseover', entrou)
+            a.addEventListener('mouseout', saiu)
+
+
+EVENTOS MOUSE
+    mouseover
+        - Quando o mouse entra dentro da div
+
+    mousemove
+        - Quando o mouse se mexe dentro da div
+
+    mousedown
+        - Quando clica e segura dento da div
+
+    mouseup
+        - Quando solta o clique
+
+    click
+        - Quando clica dento da div
+
+    mouseout
+        - Quando tira o mouse da div
+
+
+CONDIÇÕES
+    IF:
+        if(condição){
+            True
+        } else{
+            False
+        }
+
+
+PEGAR HORAS/DIA ATUAL:
+    - var horas = new Date().getHours()
+
+
+SWITCH
+    var diaSem = new Date().getDay()
+
+    switch(diaSem){
+        case 0:
+            console.log('Domingo')
+            break
+        case 1:
+            console.log('Segunda')
+            break
+        case 2:
+            console.log('Terça')
+            break
+        default:
+            console.log('Dia Inválido')
+    }

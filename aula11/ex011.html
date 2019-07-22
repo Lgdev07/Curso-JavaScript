@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DETRAN</title>
+    <style>
+        body{
+            font: normal 15pt Arial;
+            margin-bottom: 20px;
+        }
+        div{
+            margin-bottom: 20px;
+            font: bold;
+        }
+        input{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>Sistema de Multas</div>
+    Velocidade do Carro: <input type="number" name="vel" id="vel">
+    <button id="conf">Confirmar</button>
+    <div id="res"></div>
+
+    <script>
+        var resultado = window.document.querySelector('div#res')
+        window.document.querySelector('button#conf').addEventListener('click', clicar)
+
+        function clicar(){
+            var velocidade = Number(window.document.querySelector('input#vel').value)
+
+            if(velocidade >= 60){
+                resultado.innerHTML = `A sua velocidade é ${velocidade}, você está acima da média, multado!!`
+            } else{
+                resultado.innerHTML = `A sua velocidade é ${velocidade}, você está dentro do limite =)`
+            }
+        }
+
+    </script>
+
+</body>
+</html>

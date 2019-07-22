@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Federal Police</title>
+    <style>
+
+        input,div{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>Sistema de Liberação de Entrada ao Brasil</div>
+    <p>Digite seu País de Origem</p>
+    <input type="text" name="country" id="country">
+    <button id="conf">Confirmar</button>
+    <div id="res"></div>
+
+    <div id="passaporte" hidden> 
+        <input></input>
+        <button id="passaporte_confirm">Confirmar</button>
+    </div>
+    
+
+    <script>
+        window.document.querySelector('button#conf').addEventListener('click', clicar)
+
+        function clicar(){
+            var pais = document.querySelector('input#country').value
+            var resposta = document.querySelector('div#res')
+            var passaporte = document.querySelector('div#passaporte')
+            if(pais == 'Brasil'){
+                resposta.innerHTML = 'Bem-Vindo Conterrâneo'
+            }else{
+                resposta.innerHTML = 'Você é um estrangeiro..'
+                resposta.innerHTML += 'Favor escrever o número de seu Passaporte'
+                document.querySelector('div#passaporte').removeAttribute('hidden')
+            }
+        }
+    </script>
+</body>
+</html>

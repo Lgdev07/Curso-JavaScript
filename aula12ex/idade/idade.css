@@ -1,0 +1,68 @@
+body{
+    background: rgb(126, 161, 224);
+}
+p{
+    font: normal 30pt Arial;
+    text-align: center;
+}
+section{
+    background: white;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font: normal 20pt Arial;
+    line-height: 200px;
+    border-radius: 20%;
+    border: 2px solid rgba(0, 0, 0, 0.281);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+footer{
+    text-align: center;
+    line-height: 200px;
+}
+img#imagem{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 3px;
+    width: 130px;
+    position: absolute;
+    top: 48%;
+    left: 45.5%;
+}
+div#ano{
+    font: normal 2px;
+    text-align: left;
+    position: relative;
+    margin: 20px;
+    top: -50px;
+    right: -10px;
+    
+}
+div#genero{
+    font: normal 12pt Arial;
+    position: relative;
+    top: -30%;
+}
+div#mensagem{
+    position: relative;
+    top: -45%;
+    width: 400px;
+    height: 20px;
+    margin-bottom: 0px;
+}
+
+input[type=radio] {
+    top: -70%;
+    width: 30px;
+    height: 1.5em;
+}
+input{
+    margin: auto;
+    height: 30px;
+    width: 80px;
+    position: relative;
+    top: -5px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <div>Somando Números</div>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <button id="som">Somar</button>
+    <p id="res"></p>
+
+    <script>
+        window.document.querySelector('button#som').addEventListener('click', clicou)
+
+        function clicou(){
+            var res1 = Number(window.document.querySelector('input#num1').value) + 
+                       Number(window.document.querySelector('input#num2').value)
+            window.document.querySelector('p#res').innerHTML = `A soma é de ${res1}`
+        }
+    </script>
+</body>
+</html>
