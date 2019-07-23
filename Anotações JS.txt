@@ -86,3 +86,32 @@ SWITCH
         default:
             console.log('Dia Inválido')
     }
+
+CRIAR UM ELEMENTO COMO DIV, IMG, ETC..
+    img = document.createElement('img')
+
+CRIAR UM ATRIBUTO EM UMA DIV, IMG, ETC..
+    Nesse caso criaremos um atributo ID, que tenha um valor chamado FOTO 
+    img.setAtribute('id', 'foto')
+
+JOGAR UMA CRIAÇÃO DE DIV, IMG, ETC PARA O HTML
+    Por exemplo, jogar na DIV, id="res"
+    var res = document.querySelector('div#res')
+    res.appendChild(img)
+
+REPETIÇÕES
+
+    REPETIÇÃO NO INÍCIO:
+        WHILE
+            while(condição){
+                // código
+            }
+    
+    REPETIÇÃO NO FIM:
+        DO
+            do{
+                // código
+            } while(condição)
+
+
+            
