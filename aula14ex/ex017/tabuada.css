@@ -1,5 +1,5 @@
 body{
-    background: pink;
+    background: rgb(167, 181, 245);
 }
 p{
     font: normal 30pt Arial;
@@ -23,14 +23,19 @@ footer{
     text-align: center;
     line-height: 200px;
 }
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10%;
-    width: 70%;
-    border-radius: 20%;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+div{
+    position: relative;
+    bottom: -20px;
+    text-align: left;
+    padding: 15px;
+    font: normal 15pt Arial;
 }
+
+select{
+    position: relative;
+    font: normal 15pt Arial;
+    top: 40px;
+    width: 60%;
+}
+
