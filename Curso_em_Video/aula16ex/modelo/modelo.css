@@ -1,0 +1,36 @@
+body{
+    background: pink;
+}
+p{
+    font: normal 30pt Arial;
+    text-align: center;
+}
+section{
+    background: white;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font: normal 20pt Arial;
+    line-height: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+footer{
+    text-align: center;
+    line-height: 200px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10%;
+    width: 70%;
+    border-radius: 20%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

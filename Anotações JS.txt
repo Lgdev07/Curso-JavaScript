@@ -113,5 +113,58 @@ REPETIÇÕES
                 // código
             } while(condição)
 
+VARIÁVEIS SIMPLES
+    Só podem armazenar um valor por vez
 
-            
+VARIÁVEIS COMPOSTAS
+    Devem ser capazes de armazenar vários valores em 
+    uma mesma estrutura
+
+LISTA
+    let num = [0,1,2,3]
+
+    Para adicionar um valor a LISTA:
+        num.push(4)
+            [0,1,2,3,4]
+    
+    Para excluir um valor de uma LISTA:
+        num.pop()
+            [0,1,2,3]
+
+TRANSFORMAR WORD IN A LIST
+    Using the spread operator:
+
+    let arr = [...str];
+    Or Array.from
+
+    let arr = Array.from(str);
+    Or split with the new u RegExp flag:
+
+    let arr = str.split(/(?!$)/u);
+    Examples:
+
+    [...'𝟙𝟚𝟛']        // —> ["𝟙", "𝟚", "𝟛"]
+    [...'😎😜🙃']     // —> ["😎", "😜", "🙃"]
+
+SELECIONAR AS OPTIONS DE UM SELECT
+    ES6
+
+    [...select.options].filter(option => option.selected).map(option => option.value)
+    Where select is a reference to the <select> element.
+
+    To break it down:
+
+    [...select.options] takes the Array-like list of options and destructures it so that we can use Array.prototype methods on it (Edit: also consider using Array.from())
+    filter(...) reduces the options to only the ones that are selected
+    map(...) converts the raw <option> elements into their respective values
+
+OBJETO
+    no Javascript, objeto é parecido com o dicionário do Python
+        let dia = {
+            segunda: 'chuva', 
+            terça: 'sol', 
+            quarta: 'nublado',
+        }
+    Na key não tem aspas ''
+
+    
