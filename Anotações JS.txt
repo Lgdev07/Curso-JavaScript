@@ -167,4 +167,16 @@ OBJETO
         }
     Na key não tem aspas ''
 
-    
+ADICIONAR CLASSE A UMA TAG
+    tag.classList.add('paciente-invalido')
+
+FUNÇÃO ANONIMA
+    titulo.addEventListener('click', function (){
+        console.log('Essa é uma funcção anonima, fui clicado')
+    })
+
+
+
+    A página de Jéssica recarrega, porque ela está clicando em um botão dentro de um formulário. Por padrão, os dados são enviados e página é recarregada.
+
+Se quisermos evitar esse comportamento, a Jéssica deve chamar a função event.preventDefault() dentro de sua função anônima. Desta forma, o form não recarregará a página.
