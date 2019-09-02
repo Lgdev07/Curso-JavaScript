@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Nutrição</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/reset1.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 
 	</head>
@@ -18,6 +18,9 @@
 		<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
+				<ul id="validacao">
+				</ul>
+			</br>
 				<table>
 					<thead>
 						<tr>
@@ -29,7 +32,7 @@
 						</tr>
 					</thead>
 					<tbody id="tabela-pacientes">
-						<tr class="paciente-add" >
+						<tr class="paciente-add" id="paciente-add">
 							<td class="info-nome-add"><input id="inicio-nome" type="text"></td>
 							<td class="info-peso-add"><input id="inicio-peso" type="number"></td>
 							<td class="info-altura-add"><input id="inicio-altura" type="number"></td>
@@ -90,5 +93,6 @@
 	<script src="js/main.js"></script>
 	<script src="js/btn_add.js"></script>
 	<script src="js/btn_rem.js"></script>
+	<script src="js/validacoes.js"></script>
 	</body>
 </html>

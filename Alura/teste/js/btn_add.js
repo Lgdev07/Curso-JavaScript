@@ -3,19 +3,28 @@
 document.querySelector('button#adicionar').addEventListener('click', clicar_adicionar)
 
 function clicar_adicionar(){
-
+    
     let paciente = obj_novo_paciente()
+    let itm = document.querySelector(".paciente")
+    let form_add = document.querySelector(".paciente-add")
+    let cln = itm.cloneNode(true);
+    let lista_retornada = valida_formulario(paciente.nome, paciente.peso, paciente.altura, paciente.gordura)
+    
+    limpa_aviso()
+    cria_aviso(lista_retornada)
 
-    if (!(paciente.peso || paciente.nome || paciente.altura || paciente.gordura) || paciente.peso > 300 || paciente.altura > 3){
-        alert('Favor verifique os dados!')
-    } else {
-        var itm = document.querySelector(".paciente")
-        var cln = itm.cloneNode(true);
+    if (lista_retornada.length == 0){
         document.getElementById("tabela-pacientes").appendChild(cln);
-        obj_add_paciente(cln, paciente)
+        obj_add_values_new_paciente(cln, paciente)
         remover()
-    }
 
+        // Object.entries(paciente).forEach(([key, val]) => {
+        //     console.log(key); // the name of the current key.
+        //     console.log(val); // the value of the current key.
+        //   });
+
+        form_add.reset();
+    }
 }
 
 function imc(peso, altura){
@@ -32,7 +41,7 @@ function obj_novo_paciente(){
     return paciente
 }
 
-function obj_add_paciente(clone, objeto){
+function obj_add_values_new_paciente(clone, objeto){
     clone.querySelector('.info-nome').innerHTML = objeto.nome
     clone.querySelector('.info-peso').innerHTML = objeto.peso
     clone.querySelector('.info-altura').innerHTML = objeto.altura
