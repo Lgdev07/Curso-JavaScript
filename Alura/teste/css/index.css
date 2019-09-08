@@ -60,8 +60,14 @@ table{
 #adicionar{
 	background-color: green
 }
+#adicionar:hover{
+	background-color: rgb(2, 59, 2)
+}
 #remover{
 	background-color: red
+}
+#remover:hover{
+	background-color: rgb(136, 4, 4);
 }
 td, th, #adicionar, #remover {
 	padding: .7em;
@@ -146,4 +152,22 @@ button[disabled=disabled], button:disabled {
 
 .campo-invalido{
 	border: 1px solid red;
+}
+
+input {
+	border: 1px solid #ccc;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+#filtro{
+	width: 200px;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+.invisivel{
+	display: none;
 }

@@ -21,6 +21,8 @@
 				<ul id="validacao">
 				</ul>
 			</br>
+			<label for="filtro">Filtrar:</label>
+			<input type="text" name="filtro" id="filtro" placeholder="Digite o nome do paciente:">
 				<table>
 					<thead>
 						<tr>
@@ -87,12 +89,15 @@
 						</tr>
 					</tbody>
 				</table>
-
+				<span id="erro-ajax" class="invisivel">Erro ao buscar Pacientes</span>
+				<button id="buscar-paciente" class="botao bto-principal">Buscar Paciente</button>
 			</section>
 		</main>
 	<script src="js/main.js"></script>
 	<script src="js/btn_add.js"></script>
 	<script src="js/btn_rem.js"></script>
 	<script src="js/validacoes.js"></script>
+	<script src="js/filtra.js"></script>
+	<script src="js/buscar_pacientes.js"></script>
 	</body>
 </html>

@@ -1,14 +1,23 @@
 
-window.onload = remover()
+let tabela = document.querySelector('#tabela-pacientes')
 
-function remover(){
 
-    let btn_rem = document.querySelectorAll('#remover');
+tabela.addEventListener('click', function(event){
+    if (event.target.getAttribute('id') == ('remover')){
+        event.target.closest('tr').classList.add('fadeOut')
 
-    btn_rem.forEach(btn_remover => {
-        btn_remover.addEventListener('click', () =>{
-            btn_remover.closest('tr').remove()
-        })
+        setTimeout(function(){
+            event.target.closest('tr').remove()
+        }, 500)
+    }
+})
 
-})}
+// tabela.forEach(event => {
+//     console.log(event)
+//     // if (event ==) 
+//     // btn_remover.addEventListener('click', () =>{
+//     //     btn_remover.closest('tr').remove()
+//     // })
+
+// })
 

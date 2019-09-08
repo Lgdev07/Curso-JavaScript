@@ -16,14 +16,6 @@ function clicar_adicionar(){
     if (lista_retornada.length == 0){
         document.getElementById("tabela-pacientes").appendChild(cln);
         obj_add_values_new_paciente(cln, paciente)
-        remover()
-
-        // Object.entries(paciente).forEach(([key, val]) => {
-        //     console.log(key); // the name of the current key.
-        //     console.log(val); // the value of the current key.
-        //   });
-
-        form_add.reset();
     }
 }
 
