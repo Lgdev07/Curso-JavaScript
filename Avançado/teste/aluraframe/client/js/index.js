@@ -11,7 +11,7 @@ function obj_negociacao(){
         data: document.querySelector('input#data').value,
         qtd: document.querySelector('input#quantidade').value,
         valor: document.querySelector('input#valor').value,
-        volume: this.qtd * this.valor
+        volume: document.querySelector('input#quantidade').value * document.querySelector('input#valor').value,
     }
     return negociacao
 }

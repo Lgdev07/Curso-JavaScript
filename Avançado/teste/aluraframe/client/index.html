@@ -8,7 +8,6 @@
     
 </head>
 <body class="container">
-    
     <h1 class="text-center">Negociações</h1>
     
     <form class="form">
@@ -28,13 +27,16 @@
             <input id="valor" type="number" class="form-control"  min="0.01" step="0.01" value="0.0" required />
         </div>
         
-        <button class="btn btn-primary" type="submit">Incluir</button>
+        <button id="botao-incluir" class="btn btn-primary" type="submit">Incluir</button>
     </form>
     
     <div class="text-center">
-        <button class="btn btn-primary text-center" type="button">
+        <span class="btn btn-primary text-center btn-file">
+                Importar Negociações <input type="file" accept="text/plain" id="import">
+        </span>
+        <!-- <button id="import" class="btn btn-primary text-center btn-file" type="button">
             Importar Negociações
-        </button>
+        </button> -->
         <button class="btn btn-primary text-center" type="button">
             Apagar
         </button>
@@ -59,14 +61,7 @@
         <tfoot>
         </tfoot>
     </table>
-    <script src="js/models/Negociacao.js"></script>
-    <script>
-        let n1 = new Negociacao(new Date(), 5, 50)
-        console.log(n1.getValor())
-
-        let n2 = new Negociacao()
-        console.log(n2)
-    
-    </script>
+    <script src="js/index.js"></script>
+    <script src="js/import.js"></script>
 </body>
 </html>
