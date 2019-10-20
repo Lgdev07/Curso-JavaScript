@@ -70,9 +70,37 @@
     <script>
         let aluno_1 = new Aluno('Teste 1', 1)
         let prova_1 = new Prova(aluno_1.nome, 9)
+        let aluno_2 = new Aluno('Luan', 2)
+        let professor = new Professor('Jaqueline')
         console.log(prova_1)
-        prova_1.resultado
+        prova_1.gera_resultado()
         console.log(prova_1)
+
+        console.log(aluno_2)
+        aluno_2.sobrenome('Luan', 'Gomes')
+        console.log(aluno_2)
+        console.log(aluno_2._nome_completo)
+
+        teste_numero = teste(10)
+
+        console.log(teste_numero)
+
+        let avaliacoes = [
+            new Prova(new Aluno('João', 1), 8),
+            new Prova(new Aluno('Maria', 2), 4),
+            new Prova(new Aluno('José', 3), 5),
+            new Prova(new Aluno('Pedro', 4), 10),
+            new Prova(new Aluno('Joyce', 5), 7),
+        ]
+       
+        professor.aprovados(avaliacoes)
+        
+        let aprovados = avaliacoes
+            .filter(prova => prova._nota >= 7)
+            .map(prova => prova._aluno._nome)
+
+        console.log(aprovados)
+
 </script>
 </body>
 </html>

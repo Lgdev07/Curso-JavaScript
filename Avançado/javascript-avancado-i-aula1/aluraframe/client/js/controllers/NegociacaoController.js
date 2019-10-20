@@ -16,10 +16,13 @@ class NegociacaoController{
         console.log(this._input_data.value)
 
         let myDate = new Date(...
-            this._input_data.value.split('-').map((element, index) => element - index % 2)
+            this._input_data.value
+            .split('-')
+            .map((element, index) => element - index % 2)
         )
         
-        console.log(myDate)
+        console.log(`_input_data ${this._input_data.value}`)
+        console.log(`myDate ${myDate}`)
 
         let negociacao = new Negociacao(
             myDate,
@@ -27,6 +30,14 @@ class NegociacaoController{
             this._input_valor.value
         )
         
+        console.log(myDate.getDate())
+
+        let diaMesano = myDate.getDate()
+            + '/' + myDate.getMonth()
+            + '/' + myDate.getFullYear()
+
+        console.log(diaMesano)
+
     }
 
     incrementar(){
