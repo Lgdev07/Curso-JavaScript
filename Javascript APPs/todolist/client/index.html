@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>To do List</title>
+</head>
+<body class="container">
+    
+        <h1 class="text-center">To do List</h1>
+    
+        <form class="form" onsubmit="incluir.adicionar(event)">
+            
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" class="form-control" required autofocus/>        
+            </div>    
+
+            <div class="form-group">
+                <label for="data">Data para Conclusão</label>
+                <input id="data-fim" type="date" class="form-control" required />
+            </div>
+            
+            <button class="btn btn-primary" type="submit">Incluir</button>
+        </form>
+        
+        <div class="text-center">
+            <button class="btn btn-primary text-center" type="button">
+                Verificar Concluídos
+            </button>
+        </div>
+
+        <br>
+        <br>
+        
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Assunto</th>
+                    <th>Data Inicio</th>
+                    <th>Data Fim</th>
+                    <th>Concluir</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+ 
+            </tbody>   
+    
+            <tfoot>
+            </tfoot>
+        </table>
+        <script src="js/models/Assunto.js"></script>
+        <script src="js/controllers/IncluiAssunto.js"></script>
+        <script>
+            let incluir = new IncluiAssunto()
+
+        </script>
+</body>
+</html>

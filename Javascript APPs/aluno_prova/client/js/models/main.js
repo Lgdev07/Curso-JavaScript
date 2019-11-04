@@ -85,3 +85,7 @@ lista_numeros.forEach(element =>{
         console.log(`O número ${element} não é maior que 5`)
     }
 })
+console.log(lista_numeros)
+console.log(...lista_numeros)
+
+console.log(Math.max(...lista_numeros))
