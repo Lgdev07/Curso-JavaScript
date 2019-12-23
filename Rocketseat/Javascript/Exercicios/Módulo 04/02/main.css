@@ -1,0 +1,21 @@
+body {
+    background-color: dimgrey;
+    margin: 20px;
+}
+
+.form-group, .col-md-6 {
+    display: grid;
+}
+
+.form-row {
+    place-content: center;
+}
+
+.waiting {
+    background-color: rgb(207, 119, 119);
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    visibility: hidden
+}
